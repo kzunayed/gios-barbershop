@@ -1,11 +1,10 @@
-import { MapPin, Phone, Clock, Mail } from 'lucide-react';
-import mapImage from 'figma:asset/7f0422fa52c874aa1d2b60cf3c9fd88b2ce9ab46.png';
+import { MapPin, Phone, Clock } from 'lucide-react';
 
 export function Location() {
   const hours = [
-    { day: 'Monday - Friday', time: '9:00 AM - 8:00 PM' },
-    { day: 'Saturday', time: '8:00 AM - 6:00 PM' },
-    { day: 'Sunday', time: '10:00 AM - 4:00 PM' },
+    { day: 'Monday - Friday', time: '[Confirm hours]' },
+    { day: 'Saturday', time: '[Confirm hours]' },
+    { day: 'Sunday', time: '[Confirm hours]' },
   ];
 
   return (
@@ -24,11 +23,16 @@ export function Location() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Map */}
           <div className="relative rounded-lg overflow-hidden shadow-2xl h-96">
-            <img
-              src={mapImage}
-              alt="Andolini Barbershop Location Map"
-              className="w-full h-full object-cover"
-            />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.0!2d-73.7962!3d40.7025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25dd6c6f5d5af%3A0x5a7c3e3d5e7c3e3d!2s88-18%20Sutphin%20Blvd%2C%20Jamaica%2C%20NY%2011435!5e0!3m2!1sen!2sus!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Gio Cutz Location"
+            ></iframe>
           </div>
 
           {/* Contact Information */}
@@ -39,7 +43,8 @@ export function Location() {
                 <div>
                   <h3 className="text-xl text-[var(--espresso)] mb-2">Address</h3>
                   <p className="text-[var(--espresso)]/80 leading-relaxed">
-                    Note: High Street Northcote shop is temporarily closed for renovations, contact us for our home address
+                    88-18 Sutphin Blvd<br />
+                    Jamaica, NY 11435
                   </p>
                 </div>
               </div>
@@ -51,25 +56,10 @@ export function Location() {
                 <div>
                   <h3 className="text-xl text-[var(--espresso)] mb-2">Phone</h3>
                   <a
-                    href="tel:0494643544"
+                    href="tel:+16466449891"
                     className="text-[var(--espresso)]/80 hover:text-[var(--gold)] transition-colors text-lg"
                   >
-                    0494 643 544
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-[var(--gold)]">
-              <div className="flex items-start space-x-4">
-                <Mail className="text-[var(--gold)] mt-1 flex-shrink-0" size={24} />
-                <div>
-                  <h3 className="text-xl text-[var(--espresso)] mb-2">Email</h3>
-                  <a
-                    href="mailto:andolinibarbershop@gmail.com"
-                    className="text-[var(--espresso)]/80 hover:text-[var(--gold)] transition-colors"
-                  >
-                    andolinibarbershop@gmail.com
+                    (646) 644-9891
                   </a>
                 </div>
               </div>
@@ -98,11 +88,8 @@ export function Location() {
         </div>
 
         <div className="mt-12 bg-gradient-to-r from-[var(--espresso)] to-[var(--black)] rounded-lg p-8 text-center">
-          <p className="text-[var(--cream)] text-lg mb-2">
-            Free street parking available after 6 PM and on weekends
-          </p>
-          <p className="text-[var(--gold)] text-sm">
-            Public parking garage located one block east on Mulberry Street
+          <p className="text-[var(--cream)] text-lg">
+            Call ahead for availability and to confirm hours.
           </p>
         </div>
       </div>

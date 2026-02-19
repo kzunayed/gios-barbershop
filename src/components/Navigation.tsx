@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 interface NavigationProps {
   scrollToSection: (sectionId: string) => void;
@@ -10,7 +10,7 @@ export function Navigation({ scrollToSection }: NavigationProps) {
 
   const navItems = [
     { id: 'home', label: 'Home' },
-    { id: 'about', label: 'Tradition' },
+    { id: 'about', label: 'About' },
     { id: 'services', label: 'Services' },
     { id: 'gallery', label: 'Gallery' },
     { id: 'location', label: 'Location' },
@@ -32,7 +32,7 @@ export function Navigation({ scrollToSection }: NavigationProps) {
                 <path d="M12 34C12 31 15 28 20 28C25 28 28 31 28 34H12Z" fill="currentColor"/>
               </svg>
             </div>
-            <span className="text-2xl text-[var(--cream)] font-serif">Andolini</span>
+            <span className="text-2xl text-[var(--cream)] font-serif">Gio Cutz</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -46,12 +46,13 @@ export function Navigation({ scrollToSection }: NavigationProps) {
                 {item.label}
               </button>
             ))}
-            <button
-              onClick={() => scrollToSection('booking')}
-              className="bg-[var(--gold)] text-[var(--espresso)] px-6 py-2 rounded hover:bg-[var(--gold)]/90 transition-all duration-300"
+            <a
+              href="tel:+16466449891"
+              className="bg-[var(--gold)] text-[var(--espresso)] px-6 py-2 rounded hover:bg-[var(--gold)]/90 transition-all duration-300 flex items-center gap-2"
             >
-              Book Now
-            </button>
+              <Phone size={18} />
+              Call Now
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,15 +79,14 @@ export function Navigation({ scrollToSection }: NavigationProps) {
                 {item.label}
               </button>
             ))}
-            <button
-              onClick={() => {
-                scrollToSection('booking');
-                setIsMenuOpen(false);
-              }}
-              className="w-full bg-[var(--gold)] text-[var(--espresso)] px-6 py-2 rounded hover:bg-[var(--gold)]/90 transition-all duration-300 mt-2"
+            <a
+              href="tel:+16466449891"
+              onClick={() => setIsMenuOpen(false)}
+              className="w-full bg-[var(--gold)] text-[var(--espresso)] px-6 py-2 rounded hover:bg-[var(--gold)]/90 transition-all duration-300 mt-2 flex items-center justify-center gap-2"
             >
-              Book Now
-            </button>
+              <Phone size={18} />
+              Call Now
+            </a>
           </div>
         )}
       </div>

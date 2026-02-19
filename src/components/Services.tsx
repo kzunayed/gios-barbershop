@@ -3,47 +3,41 @@ import { Check } from 'lucide-react';
 export function Services() {
   const services = [
     {
-      name: 'Classic Haircut',
-      price: '$45',
-      duration: '45 min',
-      description: 'Precision cut with traditional techniques, includes hot towel treatment and styling.',
-      features: ['Consultation', 'Precision Cut', 'Hot Towel', 'Style & Finish'],
+      name: 'Haircut',
+      price: 'Call for pricing',
+      description: 'Professional haircut tailored to your style.',
+      features: ['Consultation', 'Precision Cut', 'Style & Finish'],
     },
     {
-      name: 'Traditional Straight Razor Shave',
-      price: '$55',
-      duration: '50 min',
-      description: 'The ultimate shaving experience with hot towels, pre-shave oil, and luxury aftercare.',
-      features: ['Hot Towel Prep', 'Pre-Shave Oil', 'Straight Razor Shave', 'Moisturizing Aftercare'],
+      name: 'Fade',
+      price: 'Call for pricing',
+      description: 'Clean fade with attention to detail.',
+      features: ['Consultation', 'Fade Cut', 'Edge Up', 'Finish'],
       featured: true,
     },
     {
-      name: 'Beard Trim & Shape',
-      price: '$35',
-      duration: '30 min',
-      description: 'Expert beard sculpting and grooming to maintain your perfect look.',
-      features: ['Trim & Shape', 'Edge Definition', 'Hot Towel', 'Beard Oil'],
+      name: 'Lineup',
+      price: 'Call for pricing',
+      description: 'Sharp edge-up to keep your look fresh.',
+      features: ['Edge Up', 'Neck Cleanup', 'Quick Service'],
     },
     {
-      name: 'The Complete Gentleman',
-      price: '$95',
-      duration: '90 min',
-      description: 'Our signature service combining haircut and straight razor shave.',
-      features: ['Premium Haircut', 'Straight Razor Shave', 'Face Massage', 'Luxury Products'],
+      name: 'Beard Trim',
+      price: 'Call for pricing',
+      description: 'Professional beard trimming and shaping.',
+      features: ['Trim & Shape', 'Edge Definition', 'Cleanup'],
     },
     {
-      name: 'Father & Son',
-      price: '$75',
-      duration: '60 min',
-      description: 'A special package for fathers and sons to share the Andolini experience.',
-      features: ['Two Haircuts', 'Side-by-Side Service', 'Hot Towels', 'Complimentary Photo'],
+      name: 'Kids Cut',
+      price: 'Call for pricing',
+      description: 'Patient, kid-friendly haircut service.',
+      features: ['Kid-Friendly Approach', 'Haircut', 'Styling'],
     },
     {
-      name: 'Gray Blending',
-      price: '$65',
-      duration: '45 min',
-      description: 'Natural-looking color treatment to subtly blend gray hair.',
-      features: ['Color Consultation', 'Application', 'Haircut', 'Styling'],
+      name: 'Full Service',
+      price: 'Call for pricing',
+      description: 'Complete grooming package.',
+      features: ['Haircut', 'Beard Trim', 'Lineup', 'Full Styling'],
     },
   ];
 
@@ -59,8 +53,7 @@ export function Services() {
           </h2>
           <div className="w-24 h-1 bg-[var(--gold)] mx-auto mb-6"></div>
           <p className="text-[var(--cream)]/80 text-lg max-w-2xl mx-auto">
-            Each service is performed with meticulous attention to detail, using premium products 
-            and time-honored techniques.
+            Quality barbering services for all your grooming needs.
           </p>
         </div>
 
@@ -79,14 +72,11 @@ export function Services() {
               )}
               
               <div className="p-8">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl text-[var(--espresso)]">
+                <div className="mb-4">
+                  <h3 className="text-2xl text-[var(--espresso)] mb-2">
                     {service.name}
                   </h3>
-                  <div className="text-right">
-                    <div className="text-2xl text-[var(--gold)]">{service.price}</div>
-                    <div className="text-sm text-[var(--espresso)]/60">{service.duration}</div>
-                  </div>
+                  <div className="text-lg text-[var(--gold)]">{service.price}</div>
                 </div>
 
                 <p className="text-[var(--espresso)]/80 mb-6 leading-relaxed">
@@ -110,7 +100,7 @@ export function Services() {
 
         <div className="mt-12 text-center">
           <p className="text-[var(--cream)]/60 text-sm">
-            * All services include complimentary beverage and consultation. Walk-ins welcome, appointments preferred.
+            * Walk-ins welcome. Call for current pricing and availability.
           </p>
         </div>
       </div>

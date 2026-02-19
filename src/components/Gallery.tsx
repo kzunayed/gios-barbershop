@@ -9,27 +9,27 @@ export function Gallery() {
   const images = [
     {
       url: galleryImage,
-      caption: 'Our vintage interior',
+      caption: 'Our shop interior',
     },
     {
       url: toolsImage,
-      caption: 'Traditional tools of the trade',
+      caption: 'Professional tools',
     },
     {
       url: skinFadeImage,
-      caption: 'Skin fades',
+      caption: 'Fresh fades',
     },
     {
       url: traditionImage,
-      caption: 'Where tradition meets style',
+      caption: 'Quality cuts',
     },
     {
       url: shavingCreamImage,
-      caption: 'Hot towel shave experience',
+      caption: 'Grooming services',
     },
     {
       url: beardTrimImage,
-      caption: 'Precision beard sculpting',
+      caption: 'Beard trimming',
     },
   ];
 
@@ -45,7 +45,7 @@ export function Gallery() {
           </h2>
           <div className="w-24 h-1 bg-[var(--gold)] mx-auto mb-6"></div>
           <p className="text-[var(--cream)]/80 text-lg max-w-2xl mx-auto">
-            Step inside our world of classic style, premium service, and timeless elegance.
+            Check out our work and shop atmosphere.
           </p>
         </div>
 

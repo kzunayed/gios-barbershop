@@ -1,11 +1,24 @@
+# Gio Cutz Barber Shop Website
 
-  # Vintage Italian Barbershop Website (Community) (Copy)
+A modern, mobile-friendly website for Gio Cutz Barber Shop located in Jamaica, Queens, NY.
 
-  This is a code bundle for Vintage Italian Barbershop Website (Community) (Copy). The original project is available at https://www.figma.com/design/iL6KGilKzGkp39Y0ZUuct7/Vintage-Italian-Barbershop-Website--Community---Copy-.
+## Business Information
 
-  ## Running the code
+- **Name**: Gio Cutz Barber Shop
+- **Address**: 88-18 Sutphin Blvd, Jamaica, NY 11435
+- **Phone**: (646) 644-9891
 
-  Run `npm i` to install the dependencies.
+## Features
 
-  Run `npm run dev` to start the development server.
-  
+- Responsive design optimized for mobile and desktop
+- Single call-to-action: Call Now button
+- Services showcase
+- Photo gallery
+- Location map with directions
+- Sticky mobile call button
+
+## Running the code
+
+Run `npm i` to install the dependencies.
+
+Run `npm run dev` to start the development server.
