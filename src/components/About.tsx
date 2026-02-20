@@ -1,4 +1,4 @@
-import { DollarSign, Users, Tv } from 'lucide-react';
+import { DollarSign, Users, Scissors } from 'lucide-react';
 import aboutImage from 'figma:asset/275faa3aa8f2a049279a9e8c53cdc25cb6aef100.png';
 
 export function About() {
@@ -14,9 +14,9 @@ export function About() {
       description: 'Welcoming environment for clients of all ages.',
     },
     {
-      icon: Tv,
-      title: 'Clean Shop with TVs',
-      description: 'Comfortable, clean space with entertainment while you wait.',
+      icon: Scissors,
+      title: 'Sharp Fades & Lineups',
+      description: 'Crisp cuts and clean details — tell us the look you want.',
     },
   ];
 
@@ -49,12 +49,10 @@ export function About() {
               and grooming services at prices that work for everyone.
             </p>
             <p className="text-lg text-[var(--espresso)]/90 leading-relaxed">
-              We pride ourselves on maintaining a clean, welcoming shop with TVs for your entertainment.
-              Whether you're bringing your kids for their first cut or need a fresh fade for yourself,
-              we've got you covered.
+              Whether you're bringing your kids for their first cut or need a fresh fade for yourself, we've got you covered.
             </p>
             <p className="text-lg text-[var(--espresso)]/90 leading-relaxed">
-              Stop by or give us a call to schedule your appointment. We look forward to serving you.
+              Stop by or give us a call to schedule your cut. We look forward to serving you.
             </p>
           </div>
         </div>

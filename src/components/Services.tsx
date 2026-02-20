@@ -4,38 +4,38 @@ export function Services() {
   const services = [
     {
       name: 'Haircut',
-      price: 'Call for pricing',
+      price: '$15',
       description: 'Professional haircut tailored to your style.',
       features: ['Consultation', 'Precision Cut', 'Style & Finish'],
     },
     {
       name: 'Fade',
-      price: 'Call for pricing',
+      price: '$20',
       description: 'Clean fade with attention to detail.',
       features: ['Consultation', 'Fade Cut', 'Edge Up', 'Finish'],
       featured: true,
     },
     {
       name: 'Lineup',
-      price: 'Call for pricing',
+      price: '$10',
       description: 'Sharp edge-up to keep your look fresh.',
       features: ['Edge Up', 'Neck Cleanup', 'Quick Service'],
     },
     {
       name: 'Beard Trim',
-      price: 'Call for pricing',
+      price: '$10',
       description: 'Professional beard trimming and shaping.',
       features: ['Trim & Shape', 'Edge Definition', 'Cleanup'],
     },
     {
       name: 'Kids Cut',
-      price: 'Call for pricing',
+      price: '$15',
       description: 'Patient, kid-friendly haircut service.',
       features: ['Kid-Friendly Approach', 'Haircut', 'Styling'],
     },
     {
       name: 'Full Service',
-      price: 'Call for pricing',
+      price: '$25',
       description: 'Complete grooming package.',
       features: ['Haircut', 'Beard Trim', 'Lineup', 'Full Styling'],
     },
@@ -61,22 +61,21 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`relative bg-[var(--cream)] rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 ${
-                service.featured ? 'ring-4 ring-[var(--gold)]' : ''
-              }`}
+              className={`relative bg-[var(--cream)] rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 ${service.featured ? 'ring-4 ring-[var(--gold)]' : ''
+                }`}
             >
               {service.featured && (
                 <div className="absolute top-0 right-0 bg-[var(--gold)] text-[var(--espresso)] px-4 py-1 text-sm">
                   Most Popular
                 </div>
               )}
-              
+
               <div className="p-8">
-                <div className="mb-4">
-                  <h3 className="text-2xl text-[var(--espresso)] mb-2">
+                <div className="flex items-baseline justify-between mb-4">
+                  <h3 className="text-2xl text-[var(--espresso)]">
                     {service.name}
                   </h3>
-                  <div className="text-lg text-[var(--gold)]">{service.price}</div>
+                  <div className="text-lg font-semibold text-[var(--gold)]">{service.price}</div>
                 </div>
 
                 <p className="text-[var(--espresso)]/80 mb-6 leading-relaxed">
