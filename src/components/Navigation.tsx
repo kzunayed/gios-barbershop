@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import logoUrl from '../assets/logo.svg';
 
 interface NavigationProps {
   scrollToSection: (sectionId: string) => void;
@@ -26,13 +27,16 @@ export function Navigation({ scrollToSection }: NavigationProps) {
             className="flex items-center space-x-2"
           >
             <div className="text-[var(--gold)]">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 5L25 15H15L20 5Z" fill="currentColor"/>
-                <rect x="18" y="14" width="4" height="20" fill="currentColor"/>
-                <path d="M12 34C12 31 15 28 20 28C25 28 28 31 28 34H12Z" fill="currentColor"/>
-              </svg>
+              <img
+                src={logoUrl}
+                alt="Gio Cutz Barbershop Logo"
+                width="44"
+                height="44"
+                className="invert sepia saturate-0 brightness-200"
+                style={{ filter: 'invert(1) sepia(1) saturate(2) hue-rotate(10deg) brightness(0.85)' }}
+              />
             </div>
-            <span className="text-2xl text-[var(--cream)] font-serif">Gio Cutz</span>
+            <span className="text-2xl text-[var(--cream)] font-berkshire">Gio Cutz</span>
           </button>
 
           {/* Desktop Navigation */}

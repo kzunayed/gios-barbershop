@@ -1,12 +1,6 @@
 import { MapPin, Phone, Clock } from 'lucide-react';
 
 export function Location() {
-  const hours = [
-    { day: 'Monday - Friday', time: '[Confirm hours]' },
-    { day: 'Saturday', time: '[Confirm hours]' },
-    { day: 'Sunday', time: '[Confirm hours]' },
-  ];
-
   return (
     <section id="location" className="py-20 bg-[var(--cream)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,22 +59,22 @@ export function Location() {
               </div>
             </div>
 
+            {/* Hours of Operation — unified single schedule */}
             <div className="bg-[var(--espresso)] p-8 rounded-lg shadow-lg">
               <div className="flex items-start space-x-4">
                 <Clock className="text-[var(--gold)] mt-1 flex-shrink-0" size={24} />
                 <div className="flex-1">
                   <h3 className="text-xl text-[var(--cream)] mb-4">Hours of Operation</h3>
-                  <div className="space-y-3">
-                    {hours.map((schedule, index) => (
-                      <div
-                        key={index}
-                        className="flex justify-between items-center pb-3 border-b border-[var(--gold)]/20 last:border-0"
-                      >
-                        <span className="text-[var(--cream)]/90">{schedule.day}</span>
-                        <span className="text-[var(--gold)]">{schedule.time}</span>
-                      </div>
-                    ))}
-                  </div>
+
+                  {/* Badge */}
+                  <span className="inline-block bg-[var(--gold)]/20 border border-[var(--gold)]/40 text-[var(--gold)] text-base font-semibold px-3 py-1 rounded-full mb-4">
+                    Open 7 Days a Week
+                  </span>
+
+                  {/* Time */}
+                  <p className="text-base font-semibold text-[var(--gold)]">
+                    9:00 AM – 7:30 PM
+                  </p>
                 </div>
               </div>
             </div>
@@ -89,7 +83,7 @@ export function Location() {
 
         <div className="mt-12 bg-gradient-to-r from-[var(--espresso)] to-[var(--black)] rounded-lg p-8 text-center">
           <p className="text-[var(--cream)] text-lg">
-            Call ahead for availability and to confirm hours.
+            Walk-ins welcome — call ahead for faster service.
           </p>
         </div>
       </div>
