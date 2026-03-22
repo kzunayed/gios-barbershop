@@ -1,7 +1,7 @@
-import galleryImage from 'figma:asset/c80848bca01f3d072ae5ccf86081132cecbfe71d.png';
+import galleryImage from '../assets/gallery-interior.png';
 import traditionImage from 'figma:asset/275faa3aa8f2a049279a9e8c53cdc25cb6aef100.png';
-import skinFadeImage from 'figma:asset/4b4e3399392044423b6969fee1f47b4af73f42b6.png';
-import toolsImage from 'figma:asset/fd76b7bd37742df435d59064dfc2a3e71624ef17.png';
+import skinFadeImage from '../assets/gallery-backshot.jpg';
+import toolsImage from '../assets/gallery-station2.png';
 import shavingCreamImage from 'figma:asset/a65509ed6636e710a36178c08ab4c1ca52741c89.png';
 import beardTrimImage from 'figma:asset/47feffedd2714f3fc7ba6bec270be5c53ab02495.png';
 
@@ -12,16 +12,16 @@ export function Gallery() {
       caption: 'Our shop interior',
     },
     {
-      url: toolsImage,
-      caption: 'Professional tools',
+      url: traditionImage,
+      caption: 'Quality cuts',
     },
     {
       url: skinFadeImage,
       caption: 'Fresh fades',
     },
     {
-      url: traditionImage,
-      caption: 'Quality cuts',
+      url: toolsImage,
+      caption: 'Professional tools',
     },
     {
       url: shavingCreamImage,

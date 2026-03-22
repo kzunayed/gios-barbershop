@@ -1,4 +1,4 @@
-import heroImage from 'figma:asset/c80848bca01f3d072ae5ccf86081132cecbfe71d.png';
+import heroImage from '../assets/hero-barbershop.jpg';
 import { Phone } from 'lucide-react';
 
 interface HeroProps {
@@ -12,7 +12,7 @@ export function Hero({ scrollToSection }: HeroProps) {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Vintage barbershop interior"
+          alt="Barber giving a haircut at Gio Cutz"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--espresso)]/80 via-[var(--espresso)]/60 to-[var(--espresso)]/80"></div>
