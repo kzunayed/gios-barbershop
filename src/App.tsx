@@ -6,6 +6,7 @@ import { Gallery } from './components/Gallery';
 import { Location } from './components/Location';
 import { Footer } from './components/Footer';
 import { Phone } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function App() {
   const scrollToSection = (sectionId: string) => {
@@ -41,6 +42,7 @@ export default function App() {
         <Phone size={24} />
         <span className="font-semibold">Call Now</span>
       </a>
+      <SpeedInsights />
     </div>
   );
 }
