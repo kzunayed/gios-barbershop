@@ -44,7 +44,6 @@ export function Footer() {
                 </a>
               </li>
               <li className="pt-2">
-                [Add email if needed]
               </li>
             </ul>
           </div>

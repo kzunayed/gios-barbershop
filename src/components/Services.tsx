@@ -99,7 +99,7 @@ export function Services() {
 
         <div className="mt-12 text-center">
           <p className="text-[var(--cream)]/60 text-sm">
-            * Walk-ins welcome. Call for current pricing and availability.
+            * Walk-ins welcome.
           </p>
         </div>
       </div>

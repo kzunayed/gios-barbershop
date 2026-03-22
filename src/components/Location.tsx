@@ -83,7 +83,7 @@ export function Location() {
 
         <div className="mt-12 bg-gradient-to-r from-[var(--espresso)] to-[var(--black)] rounded-lg p-8 text-center">
           <p className="text-[var(--cream)] text-lg">
-            Walk-ins welcome — call ahead for faster service.
+            Walk-ins welcome
           </p>
         </div>
       </div>
