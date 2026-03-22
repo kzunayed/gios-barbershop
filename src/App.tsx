@@ -7,6 +7,7 @@ import { Location } from './components/Location';
 import { Footer } from './components/Footer';
 import { Phone } from 'lucide-react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const scrollToSection = (sectionId: string) => {
@@ -43,6 +44,7 @@ export default function App() {
         <span className="font-semibold">Call Now</span>
       </a>
       <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
