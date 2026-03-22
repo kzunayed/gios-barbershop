@@ -1,0 +1,21 @@
+{
+  "name": "Gio Cutz Barber Shop",
+  "short_name": "Gio Cutz",
+  "description": "Affordable haircuts, fades, lineups & beard trims in Jamaica, Queens NY. Walk-ins welcome.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1A1410",
+  "theme_color": "#C9A961",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
